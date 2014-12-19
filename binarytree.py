@@ -22,16 +22,22 @@ class BinaryTreeNode(object):
 
 	def get_right(self):
 		if self.right != None:
-			self.right = node
-			return
+			return self.right
 		else: 
-			return (self.right).set_right(node)
+			return None
 
 	def set_right(self, node):
-		pass
+		if self.get_right(self) == None:
+			return
+		else:
+			return (self.right).set_right(node)
 
 	def get_value(self):
 		return self.value
 
 	def set_value(self, number):
-		
+		if self.get_value(self) == None:
+			self.value = number
+
+	def depth_first_traversal(node):
+    pass
