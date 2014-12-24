@@ -40,4 +40,7 @@ class BinaryTreeNode(object):
 			self.value = number
 
 	def depth_first_traversal(node):
-    pass
+
+
+	def breadth_first_traversal(node):
+    
